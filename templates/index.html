@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paraphrase Identification</title>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+        <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div align="center" id="input-form">
+            <h2>Paraphrase Identification</h2>
+            <form id="para-form">
+                <div id="sent1-wrapper">
+                    <p>Sentence 1:</p>
+                    <input type="text" id="sentence-1" placeholder="Sentence 1" required/>
+                </div>
+                <div id="sent2-wrapper">
+                    <p>Sentence 2:</p>
+                    <input type="text" id="sentence-2" placeholder="Sentence 2" required/>
+                </div>
+                </br>
+                <label for="input_model">Select model:</label>
+                <select id="input_model" class="form-control">
+                    <option value="bow" selected>BoW</option>
+                    <option value="minilm">MiniLM</option>
+                </select>
+                <button type="button" class="btn" id="btn-process">Are they Paraphrases?</button>
+                <br>
+                <b id="output-txt"></b>
+            </form>
+        </div>
+    </body>
+</html>

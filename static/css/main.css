@@ -1,0 +1,26 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#sent1-wrapper {
+    display: inline-flex;
+}
+
+#sent2-wrapper {
+    display: inline-flex;
+}
+
+#sentence-1 {
+    margin-top: 14px;
+    height: 17px;
+}
+
+#sentence-2 {
+    margin-top: 14px;
+    height: 17px;
+}
+
+#btn-process {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
